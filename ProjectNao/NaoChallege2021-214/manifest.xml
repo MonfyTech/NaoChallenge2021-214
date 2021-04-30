@@ -13,7 +13,11 @@
   <language>it_IT</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="behavior_1">
+  <behaviorContent path="main">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="saluto">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
