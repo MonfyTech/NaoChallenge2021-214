@@ -1,0 +1,11 @@
+topic: ~Dialogo2()
+language: iti
+
+concept: (giusto) ["per i suoi immensi corridoi" "per i corridoi" corridoi "la prima" prima uno]
+concept: (sbagliato) ["Per un attacco da questi" "Per un attacco" "Per l'attacco" "Per i suoi ospiti" "Per i suoi ospiti, soprannominati lupi"  "Perché gli ospiti venivano chiamati lupi" lupi ospiti attacco "la seconda" seconda "la terza" terza due tre]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
+
+u: (e:onStart) Perché veniva definito Albergo dei Lupi? Per i suoi immensi corridoi; Per un attacco da questi; Per i suoi ospiti, soprannominati lupi.
+u: (~giusto) Bravo, risposta corretta. L’edificio era noto come albergo dei lupi per i suoi immensi corridoi, in cui era facile perdersi; ed era dedicato agli operai celibi. $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1

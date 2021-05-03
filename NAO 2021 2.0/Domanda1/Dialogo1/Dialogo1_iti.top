@@ -1,0 +1,11 @@
+topic: ~Dialogo1()
+language: iti
+
+concept: (giusto) [aereo aerei aeroplani aeroplano "la terza" terza tre]
+concept: (sbagliato) ["barche a vela" "barca a vela"  barca barche sottomarino sottomarini treno treni "la prima" prima uno "la seconda" seconda due "la quarta" quarta quattro]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
+
+u: (e:onStart) In passato, cosa è stato fabbricato dalla Fincantieri oltre alle navi? Barche a vela; sottomarini; aerei; o treni? 
+u: (~giusto) Bravo, risposta corretta! $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1

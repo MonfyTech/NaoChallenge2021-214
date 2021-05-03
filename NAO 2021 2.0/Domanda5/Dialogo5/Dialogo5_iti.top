@@ -1,0 +1,11 @@
+topic: ~Dialogo5()
+language: iti
+
+concept: (giusto) ["conflitti" "conflitti privati" "In modo che non ci fossero conflitti privati" "per evitare conflitti privati"]
+concept: (sbagliato) ["Perchè durante il regime fascista non volevano contatti tra fascisti e partigiani" "i fascisti non volevano conflitti tra fascisti e partigiani" "conflitti tra fascisti e partigiani" "sindacati" "In modo che non si riunissero in sindacati"  "per evitare che si riunissero in sindacati"]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?"]
+
+u: (e:onStart) Perchè le case degli operai erano predisposte per non incontrarsi? Perchè durante il regime fascista non volevano contatti tra fascisti e partigiani, in modo che non ci fossero conflitti privati o in modo che non si riunissero in sindacati.
+u: (~giusto) Bravo, risposta corretta! $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1

@@ -1,0 +1,11 @@
+topic: ~Dialogo4()
+language: iti
+
+concept: (giusto) ["acqua" "acqua corrente" "acqua corrente e servizi igienici" "servizi igienici"]
+concept: (sbagliato) ["Avevano dieci piani" "dieci piani" "maggiordomo" "Gli operai potevano permettersi un maggiordomo" "Avevano un pianoforte"  "pianoforte"]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?"]
+
+u: (e:onStart) Perchè le case degli operai erano considerate lussuose? Avevano dieci piani, gli operai potevano permettersi un maggiordomo, avevano un pianofort o avevano l'acqua corrente e servizi igienici.
+u: (~giusto) Bravo, risposta corretta! $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1
