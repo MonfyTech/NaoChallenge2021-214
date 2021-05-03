@@ -1,7 +1,0 @@
-topic: ~dialogo1()
-language: iti
-concept: (giusto) [Aerei]
-concept: (sbagliato) ["Barche a vela" Tricicli Treni]
-u: (e:onStart)In passato, cosa è stato fabbricato dalla Fincantieri oltre alle navi? Barche a vela; Tricicli; Aerei; o Treni?
-u: (~giusto) Bravo! $giusto=1
-u: (~sbagliato) Mi dispiace $sbagliato=1
