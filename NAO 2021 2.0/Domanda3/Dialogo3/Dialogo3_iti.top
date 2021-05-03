@@ -1,9 +1,9 @@
 topic: ~Dialogo3()
 language: iti
 
-concept: (giusto) ["storia reale" "storia realmente accaduta" "traversata oceanica dalle coste africane a quelle indiane della nave del Lloyd Austriaco"] 
-concept: (sbagliato) ["storia inventata" "storia immaginaria" "racconto inventato" "racconto immaginario" "traversata oceanica" "traversata oceanica dei vichinghi" "storia mitologica" "racconto mitologico"]
-concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?"]
+concept: (giusto) ["storia reale" "storia realmente accaduta" "traversata oceanica dalle coste africane a quelle indiane della nave del Lloyd Austriaco" "la terza" terza tre] 
+concept: (sbagliato) ["storia inventata" "storia immaginaria" "racconto inventato" "racconto immaginario" "traversata oceanica" "traversata oceanica dei vichinghi" "storia mitologica" "racconto mitologico" "la prima" prima uno "la seconda" seconda due]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
 
 u: (e:onStart) In cosa consiste l’avventura del Piroscafo Trieste? è una storia inventata che racconta la traversata oceanica dei vichinghi dalle coste africane a quelle indiane, è un riferimento ad una storia mitologica o è un riferimento a una storia realmente accaduta che racconta la traversata oceanica dalle coste africane a quelle indiane della nave del Lloyd Austriaco?
 u: (~giusto) Bravo, risposta corretta! $giusto=1 
