@@ -15,7 +15,23 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="Set Language" id="2" localization="8" tooltip="Select the language you would like the robot to speak and understand. Any following call to&#x0A;ALSpeechRecognition (Speech Reco. box for instance) or ALTextToSpeech (Say box&#x0A;for instance) will use this language." x="117" y="20">
+                        <Box name="DialogoOver1" id="1" localization="8" tooltip="" x="266" y="223">
+                            <dialogFile>DialogoOver1/DialogoOver1.dlg</dialogFile>
+                            <bitmap>media/images/box/box-dialog.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                            <Output name="giusto" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
+                            <Output name="sbagliato" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" />
+                            <Output name="ripetere" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
+                        </Box>
+                        <Box name="Set Language" id="2" localization="8" tooltip="Select the language you would like the robot to speak and understand. Any following call to&#x0A;ALSpeechRecognition (Speech Reco. box for instance) or ALTextToSpeech (Say box&#x0A;for instance) will use this language." x="128" y="72">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -89,7 +105,7 @@
                             </Parameter>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Ripetere1" id="3" localization="8" tooltip="" x="318" y="332">
+                        <Box name="Ripetere1" id="3" localization="8" tooltip="" x="432" y="390">
                             <dialogFile>../Ripetere/Ripetere1.dlg</dialogFile>
                             <bitmap>media/images/box/box-dialog.png</bitmap>
                             <script language="4">
@@ -104,29 +120,13 @@
                             <Output name="si" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
                             <Output name="no" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" />
                         </Box>
-                        <Box name="Dialogo5" id="1" localization="8" tooltip="" x="260" y="156">
-                            <dialogFile>Dialogo5/Dialogo5.dlg</dialogFile>
-                            <bitmap>media/images/box/box-dialog.png</bitmap>
-                            <script language="4">
-                                <content>
-                                    <![CDATA[]]>
-</content>
-                            </script>
-                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                            <Output name="giusto" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
-                            <Output name="sbagliato" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" />
-                            <Output name="ripetere" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
-                        </Box>
                         <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
-                        <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="6" />
                         <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="3" />
-                        <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="5" />
-                        <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="6" />
-                        <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="7" />
                         <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="5" />
+                        <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="7" />
+                        <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="6" />
+                        <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="6" />
+                        <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="5" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>

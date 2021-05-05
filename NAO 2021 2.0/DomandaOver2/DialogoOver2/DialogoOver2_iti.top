@@ -1,0 +1,12 @@
+topic: ~DialogoOver2()
+language: iti
+
+concept: (giusto) [centro Panzano fuori lontano "fuori dal centro" "lontano dal centro" "la prima" prima uno]
+concept: (sbagliato) [vicino "vicino alla Rocca"  Rocca Caraibi "ai Caraibi" "la seconda" seconda due "la terza" terza tre]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
+
+u: (e:onStart) Dove sorsero le ville destinate a impiegati e dirigenti? Fuori dal centro di Panzano. O vicino alla Rocca. Oppure ai Caraibi.
+u: (~giusto) Bravo, risposta corretta! $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1
+

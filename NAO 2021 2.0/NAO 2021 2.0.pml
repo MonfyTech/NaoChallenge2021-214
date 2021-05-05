@@ -8,6 +8,9 @@
         <BehaviorDescription name="behavior" src="Domanda3" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="Domanda4" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="Domanda5" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="DomandaOver1" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="DomandaOver2" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="DomandaOver3" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="Dialogo1" src="Domanda1/Dialogo1/Dialogo1.dlg" />
@@ -16,6 +19,8 @@
         <Dialog name="Dialogo3" src="Domanda3/Dialogo3/Dialogo3.dlg" />
         <Dialog name="Dialogo4" src="Domanda4/Dialogo4/Dialogo4.dlg" />
         <Dialog name="Dialogo5" src="Domanda5/Dialogo5/Dialogo5.dlg" />
+        <Dialog name="DialogoOver1" src="DomandaOver1/DialogoOver1/DialogoOver1.dlg" />
+        <Dialog name="DialogoOver2" src="DomandaOver2/DialogoOver2/DialogoOver2.dlg" />
     </Dialogs>
     <Resources />
     <Topics>
@@ -31,6 +36,10 @@
         <Topic name="Dialogo4_iti" src="Domanda4/Dialogo4/Dialogo4_iti.top" topicName="Dialogo4" language="it_IT" />
         <Topic name="Dialogo5_enu" src="Domanda5/Dialogo5/Dialogo5_enu.top" topicName="Dialogo5" language="en_US" />
         <Topic name="Dialogo5_iti" src="Domanda5/Dialogo5/Dialogo5_iti.top" topicName="Dialogo5" language="it_IT" />
+        <Topic name="DialogoOver1_enu" src="DomandaOver1/DialogoOver1/DialogoOver1_enu.top" topicName="DialogoOver1" language="en_US" />
+        <Topic name="DialogoOver1_iti" src="DomandaOver1/DialogoOver1/DialogoOver1_iti.top" topicName="DialogoOver1" language="it_IT" />
+        <Topic name="DialogoOver2_enu" src="DomandaOver2/DialogoOver2/DialogoOver2_enu.top" topicName="DialogoOver2" language="en_US" />
+        <Topic name="DialogoOver2_iti" src="DomandaOver2/DialogoOver2/DialogoOver2_iti.top" topicName="DialogoOver2" language="it_IT" />
     </Topics>
     <IgnoredPaths />
 </Package>

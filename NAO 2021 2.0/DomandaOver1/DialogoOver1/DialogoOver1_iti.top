@@ -1,0 +1,11 @@
+topic: ~DialogoOver1()
+language: iti
+
+concept: (giusto) [A "cantiere" "territorio"]
+concept: (sbagliato) ["fratelli" "cosulich" "fratelli cosulic" "impiegati"]
+concept: (ripetere) [B C "non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
+
+u: (e:onStart) Di che cosa parla la linea del tempo che vedete in fondo alla sala? parla del cantiere. O dei fratelli cosulich. Oppure degli impiegati. 
+u: (~giusto) Bravo, risposta corretta! $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1
