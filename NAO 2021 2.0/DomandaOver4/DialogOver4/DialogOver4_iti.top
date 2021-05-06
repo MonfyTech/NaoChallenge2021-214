@@ -1,0 +1,13 @@
+
+topic: ~DialogOver4()
+language: iti
+
+concept: (giusto) ["Costanzo Ciano" Costanzo "la seconda"]
+concept: (sbagliato) [Galeazzo  Michelangelo Buonarroti "la terza" "la prima"]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
+
+u: (e:onStart) A chi era dedicato originariamente lo Stadio Cosulich?
+Era dedicato a Galeazzo Ciano. Era dedicato a Costanzo Ciano. Era dedicato a Michelangelo Buonarroti.
+u: (~giusto) Bravo, risposta corretta! $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1
