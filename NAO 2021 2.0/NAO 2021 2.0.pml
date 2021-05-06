@@ -12,6 +12,7 @@
         <BehaviorDescription name="behavior" src="DomandaOver2" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="DomandaOver4" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="DomandaOver5" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="RichiestaEta" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="Dialogo1" src="Domanda1/Dialogo1/Dialogo1.dlg" />
@@ -25,6 +26,7 @@
         <Dialog name="DialogOver3" src="DialogOver3/DialogOver3.dlg" />
         <Dialog name="DialogOver4" src="DomandaOver4/DialogOver4/DialogOver4.dlg" />
         <Dialog name="DialogOver5" src="DomandaOver5/DialogOver5/DialogOver5.dlg" />
+        <Dialog name="VariabileE" src="RichiestaEta/VariabileE/VariabileE.dlg" />
     </Dialogs>
     <Resources />
     <Topics>
@@ -48,6 +50,8 @@
         <Topic name="DialogOver3_iti" src="DialogOver3/DialogOver3_iti.top" topicName="DialogOver3" language="it_IT" />
         <Topic name="DialogOver4_iti" src="DomandaOver4/DialogOver4/DialogOver4_iti.top" topicName="DialogOver4" language="it_IT" />
         <Topic name="DialogOver5_iti" src="DomandaOver5/DialogOver5/DialogOver5_iti.top" topicName="DialogOver5" language="it_IT" />
+        <Topic name="VariabileE_enu" src="RichiestaEta/VariabileE/VariabileE_enu.top" topicName="VariabileE" language="en_US" />
+        <Topic name="VariabileE_iti" src="RichiestaEta/VariabileE/VariabileE_iti.top" topicName="VariabileE" language="it_IT" />
     </Topics>
     <IgnoredPaths />
 </Package>
