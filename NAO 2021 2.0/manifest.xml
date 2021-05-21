@@ -45,15 +45,11 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
+  <behaviorContent path="DomandaOver3">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
   <behaviorContent path="DomandaOver4">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="DomandaOver5">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="RichiestaEta">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

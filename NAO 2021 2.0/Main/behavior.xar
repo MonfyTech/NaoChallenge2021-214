@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram scale="70.7107">
-                        <Box name="Run Some Behaviour" id="2" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="361" y="33">
+                        <Box name="Run Some Behaviour" id="2" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="809" y="526">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -96,7 +96,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (1)" id="1" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="515" y="43">
+                        <Box name="Run Some Behaviour (1)" id="1" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="960" y="529">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -177,7 +177,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (2)" id="3" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="680" y="39">
+                        <Box name="Run Some Behaviour (2)" id="3" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1125" y="525">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -258,7 +258,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (3)" id="4" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="845" y="35">
+                        <Box name="Run Some Behaviour (3)" id="4" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1290" y="521">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -339,7 +339,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (4)" id="5" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1026" y="36">
+                        <Box name="Run Some Behaviour (4)" id="5" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1471" y="522">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -420,7 +420,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Socket" id="6" localization="8" tooltip="" x="71" y="86">
+                        <Box name="Socket" id="6" localization="8" tooltip="" x="100" y="77">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -514,7 +514,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Yun IP address" inherits_from_parent="0" content_type="3" value="192.168.0.12" default_value="192.168.1.38" custom_choice="1" tooltip="" id="9" />
                             <Parameter name="Port" inherits_from_parent="0" content_type="1" value="7891" default_value="7891" min="0" max="65535" tooltip="" id="10" />
                         </Box>
-                        <Box name="Run Some Behaviour (5)" id="7" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="208" y="93">
+                        <Box name="Run Some Behaviour (6)" id="8" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="807" y="364">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -524,7 +524,6 @@ class MyClass(GeneratedClass):
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                             <Input name="input" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
                             <Output name="output" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
-                            <Output name="MAX12" type="1" type_size="1" nature="2" inner="0" tooltip="" id="4" />
                             <Timeline enable="0">
                                 <BehaviorLayer name="behavior_layer1">
                                     <BehaviorKeyframe name="keyframe1" index="1">
@@ -563,9 +562,8 @@ class MyClass(GeneratedClass):
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
                                                 <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                                <Output name="min12" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                                                 <Output name="onError" type="3" type_size="1" nature="1" inner="0" tooltip="" id="5" />
-                                                <Output name="MAX12" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" />
                                             </Box>
                                             <Box name="Set Behaviour" id="1" localization="8" tooltip='Send the name of the behaviour you entered to the &quot;Run Behaviour&quot; box.' plugin="textedit_plugin" x="117" y="135">
                                                 <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
@@ -577,12 +575,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("RichiestaEta")]]>
+		self.onStopped("DomandaOver1")]]>
 </content>
                                                 </script>
                                                 <pluginContent>
                                                     <text>
-                                                        <![CDATA[RichiestaEta]]>
+                                                        <![CDATA[DomandaOver1]]>
 </text>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -592,20 +590,392 @@ class MyClass(GeneratedClass):
                                             <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="3" />
                                             <Link inputowner="0" indexofinput="3" outputowner="3" indexofoutput="4" />
                                             <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
-                                            <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="6" />
                                         </Diagram>
                                     </BehaviorKeyframe>
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
+                        <Box name="Run Some Behaviour (7)" id="9" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1027" y="364">
+                            <bitmap>media/images/box/box-diagram.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="input" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
+                            <Output name="output" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Run Behavior" id="3" localization="0" tooltip="Manage a behavior.&#x0A;&#x0A;Will start the behavior given as input when onStart is stimulated.&#x0A;&#x0A;Will stop it when onStop is stimulated.&#x0A;&#x0A;Will exit on onStopped when no error happened during behavior startup or stopping.&#x0A;&#x0A;Will exit on onError if an error happened, transmitting a string describing the error.&#x0A;&#x0A;Most notably (but not exclusively), the box will fail if you try to start a behavior not present on the robot, or if you try to start a behavior that&apos;s already started.&#x0A;" x="393" y="119">
+                                                <bitmap>media/images/box/box-diagram.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        self.behaviorName = str()
+        self.bm = ALProxy("ALBehaviorManager")
+
+    def onUnload(self):
+        if len(self.behaviorName) > 0:
+            self.bm.stopBehavior(self.behaviorName)
+
+    def onInput_onStart(self, p):
+        if len(self.behaviorName) > 0 and self.behaviorName != p:
+            raise RuntimeError("this box is already running another behavior")
+
+        try:
+            self.behaviorName = p
+            self.bm.runBehavior(self.behaviorName)
+        finally:
+            self.behaviorName = str()
+            self.onStopped()
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                <Output name="onError" type="3" type_size="1" nature="1" inner="0" tooltip="" id="5" />
+                                            </Box>
+                                            <Box name="Set Behaviour" id="1" localization="8" tooltip='Send the name of the behaviour you entered to the &quot;Run Behaviour&quot; box.' plugin="textedit_plugin" x="117" y="135">
+                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("DomandaOver2")]]>
+</content>
+                                                </script>
+                                                <pluginContent>
+                                                    <text>
+                                                        <![CDATA[DomandaOver2]]>
+</text>
+                                                </pluginContent>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                                <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                            </Box>
+                                            <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                            <Link inputowner="0" indexofinput="3" outputowner="3" indexofoutput="4" />
+                                            <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                        </Box>
+                        <Box name="Run Some Behaviour (8)" id="10" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1246" y="361">
+                            <bitmap>media/images/box/box-diagram.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="input" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
+                            <Output name="output" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Run Behavior" id="3" localization="0" tooltip="Manage a behavior.&#x0A;&#x0A;Will start the behavior given as input when onStart is stimulated.&#x0A;&#x0A;Will stop it when onStop is stimulated.&#x0A;&#x0A;Will exit on onStopped when no error happened during behavior startup or stopping.&#x0A;&#x0A;Will exit on onError if an error happened, transmitting a string describing the error.&#x0A;&#x0A;Most notably (but not exclusively), the box will fail if you try to start a behavior not present on the robot, or if you try to start a behavior that&apos;s already started.&#x0A;" x="393" y="119">
+                                                <bitmap>media/images/box/box-diagram.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        self.behaviorName = str()
+        self.bm = ALProxy("ALBehaviorManager")
+
+    def onUnload(self):
+        if len(self.behaviorName) > 0:
+            self.bm.stopBehavior(self.behaviorName)
+
+    def onInput_onStart(self, p):
+        if len(self.behaviorName) > 0 and self.behaviorName != p:
+            raise RuntimeError("this box is already running another behavior")
+
+        try:
+            self.behaviorName = p
+            self.bm.runBehavior(self.behaviorName)
+        finally:
+            self.behaviorName = str()
+            self.onStopped()
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                <Output name="onError" type="3" type_size="1" nature="1" inner="0" tooltip="" id="5" />
+                                            </Box>
+                                            <Box name="Set Behaviour" id="1" localization="8" tooltip='Send the name of the behaviour you entered to the &quot;Run Behaviour&quot; box.' plugin="textedit_plugin" x="117" y="135">
+                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("DomandaOver3")]]>
+</content>
+                                                </script>
+                                                <pluginContent>
+                                                    <text>
+                                                        <![CDATA[DomandaOver3]]>
+</text>
+                                                </pluginContent>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                                <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                            </Box>
+                                            <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                            <Link inputowner="0" indexofinput="3" outputowner="3" indexofoutput="4" />
+                                            <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                        </Box>
+                        <Box name="Run Some Behaviour (9)" id="11" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1464" y="359">
+                            <bitmap>media/images/box/box-diagram.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="input" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
+                            <Output name="output" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Run Behavior" id="3" localization="0" tooltip="Manage a behavior.&#x0A;&#x0A;Will start the behavior given as input when onStart is stimulated.&#x0A;&#x0A;Will stop it when onStop is stimulated.&#x0A;&#x0A;Will exit on onStopped when no error happened during behavior startup or stopping.&#x0A;&#x0A;Will exit on onError if an error happened, transmitting a string describing the error.&#x0A;&#x0A;Most notably (but not exclusively), the box will fail if you try to start a behavior not present on the robot, or if you try to start a behavior that&apos;s already started.&#x0A;" x="393" y="119">
+                                                <bitmap>media/images/box/box-diagram.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        self.behaviorName = str()
+        self.bm = ALProxy("ALBehaviorManager")
+
+    def onUnload(self):
+        if len(self.behaviorName) > 0:
+            self.bm.stopBehavior(self.behaviorName)
+
+    def onInput_onStart(self, p):
+        if len(self.behaviorName) > 0 and self.behaviorName != p:
+            raise RuntimeError("this box is already running another behavior")
+
+        try:
+            self.behaviorName = p
+            self.bm.runBehavior(self.behaviorName)
+        finally:
+            self.behaviorName = str()
+            self.onStopped()
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                <Output name="onError" type="3" type_size="1" nature="1" inner="0" tooltip="" id="5" />
+                                            </Box>
+                                            <Box name="Set Behaviour" id="1" localization="8" tooltip='Send the name of the behaviour you entered to the &quot;Run Behaviour&quot; box.' plugin="textedit_plugin" x="117" y="135">
+                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("DomandaOver4")]]>
+</content>
+                                                </script>
+                                                <pluginContent>
+                                                    <text>
+                                                        <![CDATA[DomandaOver4]]>
+</text>
+                                                </pluginContent>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                                <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                            </Box>
+                                            <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                            <Link inputowner="0" indexofinput="3" outputowner="3" indexofoutput="4" />
+                                            <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                        </Box>
+                        <Box name="Set Language" id="12" localization="8" tooltip="Select the language you would like the robot to speak and understand. Any following call to&#x0A;ALSpeechRecognition (Speech Reco. box for instance) or ALTextToSpeech (Say box&#x0A;for instance) will use this language." x="259" y="173">
+                            <bitmap>media/images/box/interaction/say.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        try:
+            self.tts = ALProxy("ALTextToSpeech")
+        except:
+            self.logger.warn("ALTextToSpeech is not available, language setting cannot be applied to speech")
+            self.tts = None
+
+        try:
+            self.asr = ALProxy("ALSpeechRecognition")
+        except:
+            self.logger.warn("ALSpeechRecognition is not available, language setting cannot be applied to recognition")
+            self.asr = None
+
+        try:
+            self.dialog = ALProxy("ALDialog")
+        except:
+            self.logger.warn("ALDialog is not available, language setting cannot be applied to dialog")
+            self.dialog = None
+
+    def onInput_onSet(self):
+        lang = self.getParameter("Language")
+        try:
+            if self.asr:
+                self.asr.setLanguage( self.getParameter("Language") )
+            if self.tts:
+                self.tts.setLanguage( self.getParameter("Language") )
+            if self.dialog:
+                self.dialog.setLanguage( self.getParameter("Language") )
+            if self.tts is None and self.asr is None and self.dialog is None:
+                raise RuntimeError("Cannot set language: neither ALTextToSpeech nor ALSpeechRecognition nor ALDialog is available.")
+            self.onReady()
+        except:
+            error = "Language " + lang + " cannot be set."
+            self.logger.warn(error)
+            self.onError(error)]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onSet" type="1" type_size="1" nature="1" inner="0" tooltip="The data is set when a signal is received on this input." id="2" />
+                            <Output name="onReady" type="1" type_size="1" nature="2" inner="0" tooltip="Signal sent when the data has been set." id="3" />
+                            <Output name="onError" type="3" type_size="1" nature="2" inner="0" tooltip="Error output:&#x0A;- triggered if the language asked cannot be set" id="4" />
+                            <Parameter name="Language" inherits_from_parent="0" content_type="3" value="Italian" default_value="English" custom_choice="1" tooltip="Set the language the robot speaks and understands." id="5">
+                                <Choice value="Arabic" />
+                                <Choice value="Brazilian" />
+                                <Choice value="Chinese" />
+                                <Choice value="Czech" />
+                                <Choice value="Danish" />
+                                <Choice value="Dutch" />
+                                <Choice value="English" />
+                                <Choice value="Finnish" />
+                                <Choice value="French" />
+                                <Choice value="German" />
+                                <Choice value="Greek" />
+                                <Choice value="Italian" />
+                                <Choice value="Japanese" />
+                                <Choice value="Korean" />
+                                <Choice value="Norwegian" />
+                                <Choice value="Polish" />
+                                <Choice value="Portuguese" />
+                                <Choice value="Russian" />
+                                <Choice value="Spanish" />
+                                <Choice value="Swedish" />
+                                <Choice value="Turkish" />
+                            </Parameter>
+                            <Resource name="Speech" type="Lock" timeout="0" />
+                        </Box>
+                        <Box name="VariabileE" id="13" localization="8" tooltip="An example of multilanguage dialog implementation" x="542" y="396">
+                            <dialogFile>../VariabileE/VariabileE.dlg</dialogFile>
+                            <bitmap>media/images/box/box-dialog.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="output" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                            <Output name="max12" type="1" type_size="1" nature="2" inner="0" tooltip="&#x0A;" id="5" />
+                            <Output name="ripetere" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" />
+                            <Output name="min12" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
+                            <Resource name="Speech" type="Lock" timeout="0" />
+                            <Resource name="Speech recognition" type="Lock" timeout="0" />
+                        </Box>
+                        <Box name="Saluto" id="7" localization="8" tooltip="" x="407" y="249">
+                            <dialogFile>../Saluto/Saluto.dlg</dialogFile>
+                            <bitmap>media/images/box/box-dialog.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                            <Output name="si" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
+                            <Output name="no" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" />
+                        </Box>
+                        <Box name="Congedo" id="14" localization="8" tooltip="" x="1703" y="270">
+                            <dialogFile>../Congedo/Congedo.dlg</dialogFile>
+                            <bitmap>media/images/box/box-dialog.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                        </Box>
                         <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="3" />
                         <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="3" />
                         <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="3" />
                         <Link inputowner="5" indexofinput="2" outputowner="4" indexofoutput="3" />
-                        <Link inputowner="0" indexofinput="4" outputowner="5" indexofoutput="3" />
+                        <Link inputowner="9" indexofinput="2" outputowner="8" indexofoutput="3" />
+                        <Link inputowner="10" indexofinput="2" outputowner="9" indexofoutput="3" />
+                        <Link inputowner="11" indexofinput="2" outputowner="10" indexofoutput="3" />
+                        <Link inputowner="2" indexofinput="2" outputowner="13" indexofoutput="7" />
+                        <Link inputowner="8" indexofinput="2" outputowner="13" indexofoutput="5" />
+                        <Link inputowner="7" indexofinput="2" outputowner="12" indexofoutput="3" />
+                        <Link inputowner="13" indexofinput="2" outputowner="7" indexofoutput="5" />
+                        <Link inputowner="0" indexofinput="4" outputowner="7" indexofoutput="6" />
+                        <Link inputowner="7" indexofinput="2" outputowner="13" indexofoutput="6" />
+                        <Link inputowner="14" indexofinput="2" outputowner="5" indexofoutput="3" />
+                        <Link inputowner="14" indexofinput="2" outputowner="11" indexofoutput="3" />
+                        <Link inputowner="0" indexofinput="4" outputowner="14" indexofoutput="4" />
                         <Link inputowner="6" indexofinput="2" outputowner="0" indexofoutput="2" />
-                        <Link inputowner="2" indexofinput="2" outputowner="7" indexofoutput="3" />
-                        <Link inputowner="7" indexofinput="2" outputowner="6" indexofoutput="6" />
+                        <Link inputowner="12" indexofinput="2" outputowner="6" indexofoutput="6" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>

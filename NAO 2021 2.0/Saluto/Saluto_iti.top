@@ -1,0 +1,9 @@
+topic: ~Saluto()
+language: iti
+
+concept: (si) ["va bene" sì ok d'accordo]
+concept: (no) [no]
+
+u: (e:onStart) Benvenuto, ti va di fare un quiz?
+u: (~si) $si=1
+u: (~no) $no=1
