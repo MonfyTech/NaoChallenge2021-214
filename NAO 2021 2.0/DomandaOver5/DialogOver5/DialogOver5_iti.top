@@ -1,0 +1,13 @@
+topic: ~DialogOver5()
+language: iti
+
+concept: (giusto) ["Dante Fornasir" Costanzo ingegnere "la prima" ]
+concept: (sbagliato) [Claudio Fontanot  Filippo Visintin "la terza" "la seconda" architetto imprenditore]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
+
+u: (e:onStart) Da chi fu costruito l’Albergo operai?
+Dall’ingegnere Dante Fornasir nel 1920. Dall’architetto Claudio Fontanot nel 1924. 
+Dall’imprenditore Filippo Visintin nel 1921.
+u: (~giusto) Bravo, risposta corretta! $giusto=1 
+u: (~sbagliato) $sbagliato=1
+u: (~ripetere) ok $ripetere=1

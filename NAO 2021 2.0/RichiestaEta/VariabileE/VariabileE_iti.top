@@ -1,0 +1,12 @@
+topic: ~VariabileE()
+language: iti
+
+
+concept: (min12) ["Ho meno di docici anni" Meno]
+concept: (max12) ["Ho più di dodici anni" più]
+concept: (ripetere) ["non ho capito" "puoi ripetere?" "Puoi ripetere la domanda?" ripeti]
+
+u: (e:onStart) Quanti anni hai? Più o meno di dodici anni?
+u: (~min12) OK! Adesso facciamo un quiz! $min12=1 
+u: (~max12) Va bene! $max12=1
+u: (~ripetere) ok $ripetere=1
