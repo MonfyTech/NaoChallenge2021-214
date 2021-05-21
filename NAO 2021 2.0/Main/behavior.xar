@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="Run Some Behaviour" id="2" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="72" y="24">
+                        <Box name="Run Some Behaviour" id="2" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="358" y="36">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -96,7 +96,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (1)" id="1" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="229" y="31">
+                        <Box name="Run Some Behaviour (1)" id="1" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="515" y="43">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -177,7 +177,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (2)" id="3" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="394" y="27">
+                        <Box name="Run Some Behaviour (2)" id="3" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="680" y="39">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -258,7 +258,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (3)" id="4" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="559" y="23">
+                        <Box name="Run Some Behaviour (3)" id="4" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="845" y="35">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -339,7 +339,7 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Box name="Run Some Behaviour (4)" id="5" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="740" y="24">
+                        <Box name="Run Some Behaviour (4)" id="5" localization="8" tooltip='Run the desired behaviour.&#x0A;In order to run a behaviour set the behaviour name into &quot;Set Behaviour&quot; text box.' x="1026" y="36">
                             <bitmap>media/images/box/box-diagram.png</bitmap>
                             <script language="4">
                                 <content>
@@ -420,12 +420,107 @@ class MyClass(GeneratedClass):
                                 </BehaviorLayer>
                             </Timeline>
                         </Box>
-                        <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Box name="Socket" id="6" localization="8" tooltip="" x="109" y="127">
+                            <bitmap>media/images/box/box-python-script.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[
+#Default Yun IP: 192.168.1.38, default port: 7891
+
+import socket #nao is a client
+
+class MyClass(GeneratedClass):
+    command = ""
+    MSGLEN=256
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        self.flag=False
+        self.tts = ALProxy('ALAnimatedSpeech')
+        self.memory=ALProxy('ALMemory')
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        #self.onStopped() #activate the output of the box
+        #self.processing()
+        pass
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.flag=False
+        self.onStopped() #activate the output of the box
+
+    def onInput_Connetti(self):
+        self.flag=False
+        self.processing()
+        pass
+
+    def onInput_Disconnetti(self):
+        self.flag=True
+        pass
+
+    def processing(self):
+        self.logger.info("Connecting ...")
+        self.socket_ny = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # socket TCP/IP
+        self.socket_ny.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.socket_ny.connect((self.getParameter("Yun IP address"), int(self.getParameter("Port"))))
+        self.logger.info("Connesso!" + self.getParameter("Yun IP address"))
+        #self.tts.say("connesso")
+        while not self.flag:
+            echo = self.socket_ny.recv(256) #ricezione echo, buffer 256 bytes
+            if len(str(echo))>0:
+                stringa=str(echo)
+                self.logger.info(stringa)
+                if str(echo)=="PRONTO!":
+                    self.logger.info("connesso e pronto a ricevere")
+                elif str(echo)=="MOVIMENTO RILEVATO":
+                    self.logger.info("Movimento Rilevato")
+                    self.acceso()
+
+                elif str(echo)=="MOVIMENTO TERMINATO":
+                    self.logger.info("Movimento Terminato")
+                    self.spento()
+
+        self.socket_ny.close()
+        del self.socket_ny
+        self.logger.info("Connessione chiusa")
+        self.flag=False
+        self.onStopped()
+        pass
+
+
+    def myreceive(self):
+        msg = ''
+        while len(msg) < self.MSGLEN:
+            chunk = self.socket_ny.recv(self.MSGLEN-len(msg))
+            msg = msg + chunk
+        return msg]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Input name="Connetti" type="1" type_size="1" nature="1" inner="0" tooltip="" id="4" />
+                            <Input name="Disconnetti" type="1" type_size="1" nature="1" inner="0" tooltip="" id="5" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="6" />
+                            <Output name="acceso" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
+                            <Output name="spento" type="1" type_size="1" nature="2" inner="0" tooltip="" id="8" />
+                            <Parameter name="Yun IP address" inherits_from_parent="0" content_type="3" value="192.168.0.12" default_value="192.168.1.38" custom_choice="1" tooltip="" id="9" />
+                            <Parameter name="Port" inherits_from_parent="0" content_type="1" value="7891" default_value="7891" min="0" max="65535" tooltip="" id="10" />
+                        </Box>
                         <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="3" />
                         <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="3" />
                         <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="3" />
                         <Link inputowner="5" indexofinput="2" outputowner="4" indexofoutput="3" />
                         <Link inputowner="0" indexofinput="4" outputowner="5" indexofoutput="3" />
+                        <Link inputowner="6" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="2" indexofinput="2" outputowner="6" indexofoutput="7" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
