@@ -1,7 +1,7 @@
 topic: ~Saluto()
 language: iti
 
-concept: (si) ["va bene" sì ok d'accordo]
+concept: (si) ["va bene" sì ok d'accordo certo certamente]
 concept: (no) [no]
 
 u: (e:onStart) Benvenuto, ti va di fare un quiz?

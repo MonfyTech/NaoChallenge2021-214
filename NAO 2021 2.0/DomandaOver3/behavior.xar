@@ -89,8 +89,8 @@
                             </Parameter>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Dialog4" id="3" localization="8" tooltip="An example of multilanguage dialog implementation" x="275" y="223">
-                            <dialogFile>DialogOver4/DialogOver4.dlg</dialogFile>
+                        <Box name="Dialog4" id="3" localization="8" tooltip="An example of multilanguage dialog implementation" x="256" y="256">
+                            <dialogFile>DialogOver3/DialogOver4.dlg</dialogFile>
                             <bitmap>media/images/box/box-dialog.png</bitmap>
                             <script language="4">
                                 <content>
@@ -124,12 +124,11 @@
                         </Box>
                         <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="3" />
-                        <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="4" />
-                        <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="5" />
                         <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="6" />
                         <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="6" />
                         <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="5" />
                         <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="7" />
+                        <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="5" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
